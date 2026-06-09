@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@bagusfebr | Digital Growth Partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for clean professional feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            600: '#1d4ed8', /* Professional Blue */
+                            700: '#1e40af', /* Dark Blue */
+                            800: '#1e3a8a',
+                            900: '#0f172a', /* Dark Gray/Slate */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for desktop to keep it professional */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 w-full bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand Image -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="block">
+                        <img src="https://i.ibb.co/1GrFWNN2/Untitled-design-1-1.webp" alt="@bagusfebr Logo" class="h-12 sm:h-14 w-auto object-contain">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-brand-600 transition-colors">Tentang Saya</a>
+                    <a href="#solutions" class="hover:text-brand-600 transition-colors">Cara Kerja</a>
+                    <a href="#packages" class="hover:text-brand-600 transition-colors">Solusi & Layanan</a>
+                    <a href="#faq" class="hover:text-brand-600 transition-colors">Tanya Jawab</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center">
+                    <button onclick="toggleModal()" class="bg-brand-700 hover:bg-brand-800 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-sm">
+                        Konsultasi Sekarang
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 p-2 rounded-lg" aria-label="Buka Menu">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-4 space-y-3">
+            <a href="#about" class="block text-slate-700 font-medium py-2 hover:text-brand-600">Tentang Saya</a>
+            <a href="#solutions" class="block text-slate-700 font-medium py-2 hover:text-brand-600">Cara Kerja</a>
+            <a href="#packages" class="block text-slate-700 font-medium py-2 hover:text-brand-600">Solusi & Layanan</a>
+            <a href="#faq" class="block text-slate-700 font-medium py-2 hover:text-brand-600">Tanya Jawab</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col">
+                <button onclick="toggleModal()" class="w-full bg-brand-700 hover:bg-brand-800 text-white px-4 py-3 rounded-lg font-semibold text-sm text-center transition-colors">
+                    Jadwal Konsultasi Gratis
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-white via-white to-slate-50 pt-10 pb-16 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Left -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-100 px-3 py-1.5 rounded-full text-brand-700 text-sm font-semibold tracking-wide">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Konsultasi Sekarang — Digital Marketing untuk Bisnis Anda
+                    </div>
+                    
+                    <h1 class="font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                        Mendapatkan Lebih Banyak <span class="text-brand-700 underline decoration-brand-200 underline-offset-4">Calon Pembeli</span> Lewat Internet
+                    </h1>
+                    
+                    <p class="text-slate-600 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Saya membantu bisnis Anda mendapatkan lebih banyak prospek dan pelanggan melalui kombinasi Meta Ads (Facebook & Instagram), Google Ads, Landing Page, Website, dan strategi digital yang terukur.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="toggleModal()" class="w-full sm:w-auto bg-brand-700 hover:bg-brand-800 text-white text-base font-semibold px-8 py-4 rounded-xl shadow-md transition-transform transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-brand-200">
+                            Diskusi Gratis Sekarang
+                        </button>
+                        <a href="#packages" class="w-full sm:w-auto text-center bg-white border border-slate-300 hover:border-slate-400 text-slate-700 text-base font-semibold px-8 py-4 rounded-xl shadow-sm hover:bg-slate-50 transition-colors">
+                            Lihat Pilihan Solusi
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators Grid -->
+                    <div class="pt-8 border-t border-slate-200 mt-8">
+                        <p class="text-xs uppercase font-semibold text-slate-400 tracking-wider mb-4">Mengapa Bekerja Sama dengan Saya?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-700">
+                            <div class="flex items-center gap-2.5 justify-center lg:justify-start">
+                                <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Praktisi Digital Marketing sejak 2019</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 justify-center lg:justify-start">
+                                <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Fokus Meningkatkan Leads dan Prospek</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 justify-center lg:justify-start">
+                                <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Sistem Fleksibel untuk Berbagai Macam Bisnis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Right -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-sm sm:max-w-md">
+                        <div class="absolute inset-0 bg-brand-700 rounded-2xl transform rotate-3 translate-x-4 translate-y-4 shadow-xl opacity-10"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-sky-400 rounded-2xl transform -rotate-1 opacity-5"></div>
+                        
+                        <!-- Card Container for Foto -->
+                        <div class="relative bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden p-6 md:p-8">
+                            <div class="aspect-[4/5] bg-slate-100 rounded-xl relative overflow-hidden flex items-center justify-center border border-slate-200">
+                                <!-- Direct Link Applied Here -->
+                                <img id="hero-photo" 
+                                     src="https://i.ibb.co/CpBdsTsn/bagus-febriansyah.webp" 
+                                     alt="Bagus Febriansyah" 
+                                     class="w-full h-full object-cover object-top" 
+                                     onerror="this.onerror=null; this.src='https://placehold.co/400x500/f0f7ff/1e40af?text=Bagus+Febriansyah';">
+                                
+                                <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm border border-slate-200/50 p-4 rounded-lg shadow-md text-center">
+                                    <p class="font-sans font-bold text-slate-950 text-base">Bagus Febriansyah</p>
+                                    <p class="text-xs text-brand-700 font-semibold tracking-wider uppercase">Digital Advertiser</p>
+                                </div>
+                            </div>
+                            <div class="mt-5 space-y-2 text-center">
+                                <p class="text-sm text-slate-500 italic">"Saya menyederhanakan digital marketing agar investasi budget iklan Anda benar-benar berubah menjadi antrean pesan pembeli di WhatsApp."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: COMMON BUSINESS PROBLEMS -->
+    <section class="py-16 bg-white border-t border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full">Kendala Umum Bisnis di 2026</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Apakah Anda Mengalami Salah Satu Masalah Ini?
+                </h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">
+                    Mengeluarkan modal promosi tanpa ada hasil yang jelas memang sangat melelahkan. Kami memahami kondisi yang dialami pemilik bisnis di lapangan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Problem 1: Belum Pernah Beriklan -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Belum Pernah Beriklan Sama Sekali</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sama sekali belum pernah promosi lewat internet. Ingin mempromosikan produk/jasa Anda tetapi bingung harus memulai dari mana dan buta hal teknis yang rumit.
+                    </p>
+                </div>
+
+                <!-- Problem 2: Mau Iklan tapi Takut Boncos -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Mau Beriklan, Tapi Tidak Tahu Caranya</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Ingin mencoba memasang iklan di Facebook, Instagram, atau Google agar bisnis bisa lebih dikenal, tetapi takut salah memencet tombol pengaturan yang bisa membuang modal sia-sia.
+                    </p>
+                </div>
+
+                <!-- Problem 3: Iklan Sendiri tapi Sepi -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Iklan Sudah Berjalan, Tapi Calon Pembeli Sedikit</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sudah mencoba beriklan mandiri atau menggunakan jasa lain, tetapi pesan atau chat dari calon pelanggan masih sangat sedikit dan jarang ada yang menanyakan detail penawaran Anda.
+                    </p>
+                </div>
+
+                <!-- Problem 4: Website Sepi Pengunjung / No Inquiry -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Punya Website, Tapi Sepi Pengunjung</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sudah meluncurkan website resmi, namun tidak ada kunjungan dan minim sekali orang yang mengisi formulir kontak atau menghubungi nomor WhatsApp kantor Anda.
+                    </p>
+                </div>
+
+                <!-- Problem 5: Bingung Pilih Media Pemasaran -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Bingung Memilih Saluran Iklan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sulit menentukan apakah jenis usaha Anda lebih cocok dipromosikan lewat Meta Ads (Facebook & Instagram), pencarian kata kunci Google Ads, atau pembuatan website.
+                    </p>
+                </div>
+
+                <!-- Problem 6: Buta Data / Hasil Tidak Terukur -->
+                <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-xl hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Iklan Jalan, Hasilnya Tidak Terlacak</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Promosi terus berjalan dan uang keluar setiap hari, tetapi Anda tidak bisa melacak secara pasti saluran pemasaran mana yang sebenarnya paling banyak mendatangkan transaksi.
+                    </p>
+                </div>
+            </div> <!-- CLOSE GRID CONTAINER -->
+
+            <!-- Supporting Explanation Callout (Highly Standout Version - Cleanly Out of Grid) -->
+            <div class="p-8 sm:p-10 bg-brand-50 border-l-4 border-brand-700 rounded-r-2xl rounded-l-md max-w-4xl mx-auto shadow-md text-left relative overflow-hidden mt-12">
+                <div class="absolute right-4 bottom-4 text-brand-200 opacity-20 pointer-events-none hidden sm:block">
+                    <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-xl text-brand-700 font-bold">💡</div>
+                    <div>
+                        <h4 class="font-sans text-xl sm:text-2xl font-bold text-slate-900 mb-3">Pentingnya Digital Marketing untuk Bisnis di 2026</h4>
+                        <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                            Digital marketing bukan lagi sekadar pilihan, tetapi salah satu cara paling efektif bagi bisnis untuk ditemukan oleh calon customer. Saat ini, sebagian besar orang mencari informasi, membandingkan produk, dan mengambil keputusan pembelian secara online sebelum menghubungi penjual. Tanpa kehadiran digital yang tepat, bisnis berisiko kehilangan banyak peluang kepada kompetitor yang lebih mudah ditemukan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PORTFOLIO & TESTIMONI -->
+    <section id="portfolio" class="py-16 bg-slate-100 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full">Hasil Nyata Mitra Kami</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Portofolio & Hasil Chat WhatsApp Masuk
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    Klik pada foto di bawah ini untuk memperbesar tangkapan layar hasil chat masuk di WhatsApp, laporan performa iklan, dan dashboard pemasaran digital kami.
+                </p>
+            </div>
+
+            <!-- 3x3 Grid with aspect ratio 4:5 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/P8NC3JF/1761566521049-Testimoni-rio-ahsana.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/P8NC3JF/1761566521049-Testimoni-rio-ahsana.webp" alt="Portofolio 1" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 1</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/jPRbr1pN/1761566044664-Testimoni-agung-MSC-new.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/jPRbr1pN/1761566044664-Testimoni-agung-MSC-new.webp" alt="Portofolio 2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 2</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/2Ysj5JNX/1761559485905-Testimoni-pak-awi-sensor.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/2Ysj5JNX/1761559485905-Testimoni-pak-awi-sensor.webp" alt="Portofolio 3" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 3</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/HD0zgN3s/1761559472624-testimoni-pak-iqrar-1.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/HD0zgN3s/1761559472624-testimoni-pak-iqrar-1.webp" alt="Portofolio 4" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 4</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/r2C2DQVN/testimoni-jasa-sukri-sudin-4-480x927.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/r2C2DQVN/testimoni-jasa-sukri-sudin-4-480x927.webp" alt="Portofolio 5" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 5</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/tMMX8x5C/testimoni-jasa-sukri-sudin-5-480x916.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/tMMX8x5C/testimoni-jasa-sukri-sudin-5-480x916.webp" alt="Portofolio 6" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 6</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/mC5KzFvz/1770276194424-max-spend-faktacuan-B.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/mC5KzFvz/1770276194424-max-spend-faktacuan-B.webp" alt="Portofolio 7" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 7</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/mC5KzFvz/1770276194424-max-spend-faktacuan-A.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/mC5KzFvz/1770276194424-max-spend-faktacuan-A.webp" alt="Portofolio 8" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 8</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 9 -->
+                <div class="group relative cursor-zoom-in overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-xs transition-all hover:shadow-md hover:-translate-y-1" onclick="openLightbox('https://i.ibb.co/KxWn04Kk/1761546834993-ads-andaru-spending-sd-11-feb-2025.webp')">
+                    <div class="aspect-[4/5] w-full overflow-hidden">
+                        <img src="https://i.ibb.co/KxWn04Kk/1761546834993-ads-andaru-spending-sd-11-feb-2025.webp" alt="Portofolio 9" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs sm:text-sm font-semibold">Lihat Detail Gambar 9</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: HOW THE SYSTEM WORKS -->
+    <section id="solutions" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-100 px-3 py-1.5 rounded-full">Sistem Iklan Digital</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Bagaimana Saya Membantu Bisnis Anda Menjangkau Calon Pelanggan
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base font-semibold text-brand-700">
+                    Pilih yang paling sesuai dengan kebutuhan dan kesiapan operasional bisnis Anda saat ini:
+                </p>
+            </div>
+
+            <!-- Funnels showing both Paths with styled Point Boxes and Funnel Arrows -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Path A: Alur Praktis (Langsung Ke WhatsApp) -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">A</span>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Alur Iklan Langsung ke WhatsApp</h3>
+                                <p class="text-xs text-slate-500">Sangat praktis, hemat biaya, tanpa memerlukan website.</p>
+                            </div>
+                        </div>
+
+                        <!-- Funnel Box Points with Down Arrows -->
+                        <div class="space-y-4">
+                            <!-- Step 1 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 1 — TRAFFIC</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Iklan Ditayangkan di Facebook & Instagram</p>
+                                <p class="text-xs text-slate-500 mt-1">Menargetkan pengguna sosial media yang sesuai dengan profil pembeli potensial produk Anda.</p>
+                            </div>
+                            
+                            <div class="flex justify-center my-1 text-slate-400 font-bold text-lg">↓</div>
+
+                            <!-- Step 2 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 2 — ACTION</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Menekan Tombol Hubungi Penjual</p>
+                                <p class="text-xs text-slate-500 mt-1">Calon pembeli langsung diarahkan membuka aplikasi WhatsApp di telepon genggam mereka.</p>
+                            </div>
+
+                            <div class="flex justify-center my-1 text-slate-400 font-bold text-lg">↓</div>
+
+                            <!-- Step 3 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 3 — LEADS & CLOSING</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Terjadi Chat WA & Transaksi Penjualan</p>
+                                <p class="text-xs text-slate-500 mt-1">Tim Admin atau CS Anda tinggal membalas pesan WhatsApp yang masuk untuk menyelesaikan transaksi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Path B: Alur Sistematis (Lewat Landing Page) -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">B</span>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Iklan Menggunakan Landing Page</h3>
+                                <p class="text-xs text-slate-500">Menyaring calon pembeli yang masuk adalah kontak yang lebih serius.</p>
+                            </div>
+                        </div>
+
+                        <!-- Funnel Box Points with Down Arrows -->
+                        <div class="space-y-4">
+                            <!-- Step 1 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 1 — TRAFFIC</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Menjangkau Target Pengunjung Iklan</p>
+                                <p class="text-xs text-slate-500 mt-1">Iklan ditayangkan secara luas ke target pasar di Instagram, Facebook, ataupun pencarian Google.</p>
+                            </div>
+                            
+                            <div class="flex justify-center my-1 text-slate-400 font-bold text-lg">↓</div>
+
+                            <!-- Step 2 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 2 — LANDING PAGE</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Membaca Edukasi Penawaran</p>
+                                <p class="text-xs text-slate-500 mt-1">Calon pembeli diedukasi terlebih dahulu dengan deskripsi, gambar produk, testimoni, dan info harga di web.</p>
+                            </div>
+
+                            <div class="flex justify-center my-1 text-slate-400 font-bold text-lg">↓</div>
+
+                            <!-- Step 3 -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
+                                <span class="block text-xs uppercase font-bold text-brand-600 mb-1">LANGKAH 3 — LEADS TERSARING</span>
+                                <p class="font-semibold text-slate-900 text-sm sm:text-base">Chat WhatsApp Kualitas Tinggi & Closing</p>
+                                <p class="text-xs text-slate-500 mt-1">Hanya orang-orang yang sudah paham penawaran Anda yang akan menekan tombol kirim pesan ke WhatsApp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Supporting Explanation Callout (Highly Standout Version) -->
+            <div class="p-8 sm:p-10 bg-brand-50 border-l-4 border-brand-700 rounded-r-2xl rounded-l-md max-w-4xl mx-auto shadow-md text-left relative overflow-hidden">
+                <div class="absolute right-4 bottom-4 text-brand-200 opacity-20 pointer-events-none hidden sm:block">
+                    <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-xl text-brand-700 font-bold">💡</div>
+                    <div>
+                        <h4 class="font-sans text-xl sm:text-2xl font-bold text-slate-900 mb-3">Digital Marketing Bukan Hanya Soal Memasang Iklan</h4>
+                        <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+							Bisnis yang berkembang dengan baik biasanya memiliki cara yang jelas untuk mendatangkan calon customer, mengarahkan mereka ke penawaran yang menarik, melakukan follow up dengan cepat, dan mengetahui aktivitas pemasaran mana yang benar-benar menghasilkan penjualan.                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SOLUTIONS & PACKAGES -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full font-sans">TERSEDIA BERAGAM PAKET</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Pilihan Paket Layanan Digital Marketing
+                </h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">
+                    Setiap bisnis memiliki kebutuhan yang berbeda. Pilih salah satu yang sesuai untuk bisnis Anda:
+                </p>
+            </div>
+
+            <!-- SEGMENT 1: IKLAN LANGSUNG WHATSAPP (CTWA) -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-8">
+                    <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-base">01</span>
+                    <div>
+                        <h3 class="font-sans text-xl sm:text-2xl font-bold text-slate-900">Iklan Meta Ads langsung ke WhatsApp (CTWA)</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Iklan instan yang langsung mengarah ke aplikasi WhatsApp tanpa memerlukan website. Sangat praktis.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Card CTWA 1: Starter -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-emerald-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">CTWA STARTER</h4>
+                            <p class="text-xs text-slate-500 mt-1">Cocok buat bisnis Anda yang baru mulai beriklan</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget Iklan)</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 599.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 50.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 499.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('CTWA Starter')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card CTWA 2: Grow -->
+                    <div class="bg-white border-2 border-brand-500 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm relative">
+                        <span class="absolute -top-3.5 right-6 bg-brand-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Paling Populer</span>
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">CTWA GROW</h4>
+                            <p class="text-xs text-slate-500 mt-1">Menjaring lebih banyak chat harian di WhatsApp.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget Iklan)</p>
+                                <p class="text-3xl font-bold text-brand-700">Rp 999.000</p>
+                            </div>
+                            <div class="border-t border-slate-200 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 100.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 899.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200">
+                            <button onclick="toggleModal('CTWA Grow')" class="w-full bg-brand-700 hover:bg-brand-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-sm">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card CTWA 3: Pro -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-emerald-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">CTWA PRO</h4>
+                            <p class="text-xs text-slate-500 mt-1">Pengelolaan bulanan terstruktur agar hasil stabil.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget Iklan)</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 3.799.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Bulan</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 100.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 3.599.000/bulan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('CTWA Pro')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: IKLAN LANDING PAGE (LPWA) -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-8">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-base">02</span>
+                    <div>
+                        <h3 class="font-sans text-xl sm:text-2xl font-bold text-slate-900">Iklan Meta Ads Menggunakan Landing Page (LPWA)</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Iklan terarah yang menyaring calon pembeli melalui website satu halaman yang persuasif. Untuk mendapatkan leads yang lebih baik.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Card LPWA 1: Starter -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-blue-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">LPWA STARTER</h4>
+                            <p class="text-xs text-slate-500 mt-1">Cocok untuk Iklan perdana bisnis Anda beserta pembuatan website penawaran.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget & Website)</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 1.299.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 100.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                   	<li>Pembuatan Website Landing Page</li>
+                                    <li>Pemasangan Pelacakan Tombol WA</li>
+                                    <li>Pengelolaan Iklan Meta Ads</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 999.000/minggu</li>
+								</ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('LPWA Starter')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card LPWA 2: Grow -->
+                    <div class="bg-white border-2 border-brand-500 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm relative">
+                        <span class="absolute -top-3.5 right-6 bg-brand-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">BANYAK DIPILIH</span>
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">LPWA GROW</h4>
+                            <p class="text-xs text-slate-500 mt-1">Dapatkan calon pembeli teredukasi dalam skala lebih besar.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget & Website)</p>
+                                <p class="text-3xl font-bold text-brand-700">Rp 1.999.000</p>
+                            </div>
+                            <div class="border-t border-slate-200 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 200.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                   	<li>Pembuatan Website Landing Page</li>
+                                    <li>Pemasangan Pelacakan Tombol WA</li>
+                                    <li>Pengelolaan Iklan Meta Ads</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 1.699.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200">
+                            <button onclick="toggleModal('LPWA Grow')" class="w-full bg-brand-700 hover:bg-brand-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-sm">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card LPWA 3: Pro -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-blue-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">LPWA PRO</h4>
+                            <p class="text-xs text-slate-500 mt-1">Optimasi penuh jangka panjang agar tim sales kewalahan.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Investasi (Termasuk Budget & Website)</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 3.799.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>2 Minggu</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 200.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Channel:</span><span>Meta (FB/IG Ads)</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup Akun Bisnis & Akun Iklan</li>
+									<li>Konsultasi Konten Iklan</li>
+									<li>Penyusunan Strategi Iklan</li>
+                                    <li>Riset Target Wilayah & Minat</li>
+                                   	<li>Pembuatan Website Landing Page</li>
+                                    <li>Pemasangan Pelacakan Tombol WA</li>
+                                    <li>Pengelolaan Iklan Meta Ads</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 3.599.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('LPWA Pro')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: IKLAN GOOGLE ADS -->
+            <div>
+                <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-8">
+                    <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-base">03</span>
+                    <div>
+                        <h3 class="font-sans text-xl sm:text-2xl font-bold text-slate-900">Iklan Google Ads</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Iklan pencarian kata kunci di mesin Google. Menargetkan orang yang sedang aktif butuh dan mencari solusi.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Google Card 1: Starter -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-amber-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">GOOGLE ADS STARTER</h4>
+                            <p class="text-xs text-slate-500 mt-1">Cocok untuk: Pemula atau bisnis lokal yang ingin uji coba pasar dengan risiko minim dan pencarian mendesak.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Total Investasi</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 799.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+								<div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 50.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Saluran:</span><span>Google Search Network</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup & Konfigurasi Awal Akun Google Ads</li>
+                                    <li>Riset Kata Kunci Kata Pencarian Utama</li>
+                                    <li>Pembuatan Iklan Google</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 599.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('Google Ads Starter')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Google Card 2: Grow -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-amber-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">GOOGLE ADS GROW</h4>
+                            <p class="text-xs text-slate-500 mt-1">Cocok untuk: Bisnis yang ingin meningkatkan visibilitas, mendominasi pasar lokal, dan mulai melacak konversi dengan lebih serius.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Total Investasi</p>
+                                <p class="text-3xl font-bold text-slate-900">Rp 1.299.000</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Minggu</span></div>
+								<div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Rp 100.000 / Hari</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Saluran:</span><span>Google Search Network</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Setup & Konfigurasi Awal Akun Google Ads</li>
+                                    <li>Riset Kata Kunci Kata Pencarian Utama</li>
+                                    <li>Pembuatan Iklan Google</li>
+									<li>Optimasi Skor Kualitas Iklan (Quality Score) untuk menekan CPC</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+									<li>Biaya perpanjangan Rp 999.000/minggu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('Google Ads Grow')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Google Card 3: Pro -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-amber-500 transition-colors">
+                        <div>
+                            <h4 class="font-sans text-2xl font-bold text-slate-950">GOOGLE ADS PRO</h4>
+                            <p class="text-xs text-slate-500 mt-1">Cocok untuk: Bisnis yang siap scale up, membutuhkan sistem pemasaran terpadu, and ingin optimasi data jangka panjang.</p>
+                            <div class="my-5">
+                                <p class="text-xs text-slate-400 font-semibold">Total Investasi</p>
+                                <p class="text-3xl font-bold text-slate-900">Hubungi Saya</p>
+                            </div>
+                            <div class="border-t border-slate-200/60 pt-4 space-y-3 text-xs sm:text-sm text-slate-600">
+                                <div class="flex justify-between"><span class="font-medium">Durasi Paket:</span><span>1 Bulan</span></div>
+                                <div class="flex justify-between"><span class="font-medium">Anggaran Iklan:</span><span>Custom</span></div>
+								<div class="flex justify-between"><span class="font-medium">Saluran:</span><span>Google Search & Discovery</span></div>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-500 text-xs">
+                                    <li>Semua fitur paket Grow</li>
+									<li>Optimasi Iklan Berkelanjutan Setiap Hari</li>
+                                    <li>Pelacakan Google Tag Manager (GTM)</li>
+                                    <li>Strategi Kata Kunci Eksklusif & Pemetaan Audiens</li>
+                                    <li>Laporan Evaluasi Akhir Iklan</li>
+                                    <li>Sesi Konsultasi Eksklusif Bulanan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-200/60">
+                            <button onclick="toggleModal('Google Ads Pro')" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all">
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: LIMITATIONS & EXCLUSIONS -->
+    <section id="exclusions" class="py-16 bg-slate-50 border-t border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-sm">
+                <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                    <span class="text-2xl">⚠️</span>
+                    <div>
+                        <h3 class="font-sans text-xl sm:text-2xl font-bold text-slate-900">Penting: Layanan yang Tidak Termasuk</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Demi keterbukaan dan hasil kerja sama yang sehat, harap ketahui batasan tanggung jawab jasa saya:</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <!-- Exclusion 1 -->
+                    <div class="flex gap-3 items-start">
+                        <span class="text-red-500 font-bold mt-0.5">✕</span>
+                        <div>
+                            <p class="font-bold text-slate-900">Bukan Jasa Desain Grafis Kreatif Konten & Video Editing</p>
+                            <p class="text-slate-500 text-xs mt-0.5">Klien wajib menyiapkan materi dasar seperti foto produk, foto bisnis, atau gambar promosi yang dimiliki. Tugas saya adalah mengolah dan merangkai materi tersebut agar tampil rapi dan menarik di penempatan iklan digital, serta mengemasnya agar menarik.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exclusion 2 -->
+                    <div class="flex gap-3 items-start">
+                        <span class="text-red-500 font-bold mt-0.5">✕</span>
+                        <div>
+                            <p class="font-bold text-slate-900">Bukan Penyedia Layanan Website, Hosting dan Server</p>
+                            <p class="text-slate-500 text-xs mt-0.5">Paket layanan diatas adalah untuk Jasa Iklan Digital Marketing, jika ada biaya diluar itu seperti domain and hosting / server, atau tools tambahan untuk meningkatkan performa tracking, akan dikenakan charge sesuai dengan yang diperlukan</p>
+                        </div>
+                    </div>
+
+                    <!-- Exclusion 3 -->
+                    <div class="flex gap-3 items-start">
+                        <span class="text-red-500 font-bold mt-0.5">✕</span>
+                        <div>
+                            <p class="font-bold text-slate-900">Bukan Pengelola Tim Sales atau Follow-Up Calon Pembeli</p>
+                            <p class="text-slate-500 text-xs mt-0.5">Tugas utama saya adalah memastikan orang-orang yang tepat mengirim pesan masuk ke WhatsApp Anda. Urusan membalas chat, melakukan proses penawaran harga lanjutan, melayani komplain, serta meyakinkan pembeli hingga terjadi transaksi (closing) adalah tanggung jawab admin atau CS internal Anda.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exclusion 4 -->
+                    <div class="flex gap-3 items-start">
+                        <span class="text-red-500 font-bold mt-0.5">✕</span>
+                        <div>
+                            <p class="font-bold text-slate-900">Tidak Memberikan Garansi Angka Hasil yang Tidak Realistis</p>
+                            <p class="text-slate-500 text-xs mt-0.5">Saya tidak pernah menggaransi hasil pasti seperti "pasti terjadi 100 kali transaksi" atau "pasti meraup omzet ratusan juta". Keputusan akhir untuk membeli produk sepenuhnya bergantung pada kualitas produk Anda, tingkat persaingan di pasar, kecocokan harga, serta keramahan tim CS Anda dalam merespons calon pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: ABOUT BAGUS FEBRIANSYAH -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Story Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-100 px-3 py-1.5 rounded-full">Perkenalan Singkat</span>
+                    <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+                        Halo, Saya Bagus
+                    </h2>
+                    
+                    <div class="text-slate-600 space-y-4 text-sm sm:text-base leading-relaxed">
+                        <p>
+                            Sejak tahun 2019, saya mulai bergerak di dunia pengelolaan dan pengembangan usaha online. Melalui perjalanan bertahun-tahun, saya sangat paham tantangan terbesar pemilik bisnis: bingung harus mulai digital marketing darimana.
+                        </p>
+                        <p>
+                            Kini, fokus utama saya adalah menjadi rekan pertumbuhan bisnis Anda (Digital Growth Partner). Saya membantu menyederhanakan cara beriklan agar bisnis Anda terus menerima pesan dari calon pembeli potensial di WhatsApp secara konsisten.
+                        </p>
+                        <p>
+                            Saya menjalin kerja sama secara transparan tanpa istilah-istilah teknologi yang membingungkan. Tugas saya adalah mengurus bagian teknis promosi, sedangkan tugas Anda dan tim adalah melayani pesanan dengan ramah.
+                        </p>
+                    </div>
+
+                    <!-- Highlights Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-xs">
+                            <p class="text-brand-700 font-bold text-base sm:text-lg">Growth Partner</p>
+                            <p class="text-xs text-slate-500">Berperan sebagai partner diskusi, bukan agensi kompleks.</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-xs">
+                            <p class="text-brand-700 font-bold text-base sm:text-lg">Praktisi Lapangan</p>
+                            <p class="text-xs text-slate-500">Menerapkan taktik iklan langsung berdasarkan data nyata.</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-xs">
+                            <p class="text-brand-700 font-bold text-base sm:text-lg">Fokus Hasil Nyata</p>
+                            <p class="text-xs text-slate-500">Mengutamakan jumlah chat calon pembeli yang masuk.</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-xs">
+                            <p class="text-brand-700 font-bold text-base sm:text-lg">Sangat Transparan</p>
+                            <p class="text-xs text-slate-500">Laporan pemakaian dana iklan tercatat secara berkala.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Frame Column -->
+                <div class="lg:col-span-5 flex justify-center order-first lg:order-last">
+                    <div class="relative w-full max-w-sm">
+                        <div class="absolute inset-0 bg-brand-700 rounded-2xl transform -rotate-2 opacity-5"></div>
+                        
+                        <!-- Profile Card -->
+                        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-md text-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-100 border-2 border-brand-100 mx-auto flex items-center justify-center overflow-hidden mb-4">
+                                <img src="https://i.ibb.co/CpBdsTsn/bagus-febriansyah.webp" 
+                                     alt="Bagus Febriansyah - Profil" 
+                                     class="w-full h-full object-cover object-top"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/150x150/f0f7ff/1e40af?text=Bagus';">
+                            </div>
+                            <h3 class="font-sans text-xl font-bold text-slate-900">Bagus Febriansyah</h3>
+                            <p class="text-xs font-semibold uppercase text-brand-600 tracking-wider">Owner & Digital Growth Partner</p>
+                            
+                            <div class="border-t border-slate-200/60 mt-4 pt-4 text-left space-y-2.5">
+                                <div class="flex items-center gap-2 text-xs text-slate-600">
+                                    <svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    <span>Aktif Digital Marketing sejak 2019</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs text-slate-600">
+                                    <svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    <span>Berbasis di Kota Malang, Jawa Timur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: WHO THIS IS FOR -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full">Kesesuaian Layanan</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Layanan Ini Sangat Cocok Untuk...
+                </h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">
+                    Saya bermitra erat dengan pemilik usaha dari industri berikut yang ingin menaikkan jumlah pembeli secara sehat:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🏪</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">UMKM / Retail</p>
+                </div>
+                <!-- Card 2 (Travel Umroh) -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">✈️</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Travel Umroh</p>
+                </div>
+                <!-- Card 3 (Villa & Hotel) -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🏨</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Villa & Hotel</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">💼</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Jasa Profesional</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🩺</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Klinik Kesehatan</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🏗️</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Kontraktor & Properti</p>
+                </div>
+                <!-- Card 7 (Jasa Lokal) -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🏠</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">Jasa Lokal</p>
+                </div>
+                <!-- Card 8 (FnB / Kuliner) -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center hover:bg-brand-50 hover:border-brand-300 transition-colors">
+                    <span class="text-3xl mb-2">🍲</span>
+                    <p class="font-semibold text-slate-800 text-sm sm:text-base">FnB / Kuliner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FAQ (TANYA JAWAB UMUM) -->
+    <section id="faq" class="py-16 bg-white border-t border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-100 px-3 py-1.5 rounded-full">Pertanyaan Sering Diajukan</span>
+                <h2 class="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-4 leading-tight">
+                    Tanya & Jawab Mengenai Kerja Sama
+                </h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">
+                    Berikut beberapa contoh kebingungan umum yang sering ditanyakan oleh pemilik bisnis sebelum kita mulai bekerja sama.
+                </p>
+            </div>
+
+            <!-- FAQ Accordion Wrapper -->
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Apakah saya harus sudah punya website sendiri terlebih dahulu?</span>
+                        <span id="faq-icon-1" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-1" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Tidak perlu khawatir. Jika Anda mengambil paket **Iklan Langsung WA (CTWA)**, Anda tidak memerlukan website sama sekali karena iklan akan mengarah langsung ke kontak WhatsApp Anda. Jika memilih paket **Iklan Landing Page (LPWA)**, pembuatan halaman penjualan (Landing Page Website) sudah termasuk ke dalam paket layanan saya.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Apakah saya harus menyiapkan konten foto & video promosi sendiri?</span>
+                        <span id="faq-icon-2" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-2" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Ya, Anda diharapkan menyediakan bahan dasar mentah seperti foto produk atau video ruko operasional (foto/video amatir menggunakan HP sudah sangat bagus dan natural). Saya akan membantu menyeleksi dan merangkai materi tersebut agar layak pasang sebagai media iklan yang berdaya beli.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Berapa budget modal iklan harian yang disarankan untuk pemula?</span>
+                        <span id="faq-icon-3" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-3" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Untuk tahap awal, modal harian Rp50.000 hingga Rp100.000 per hari sudah cukup ideal. Anggaran iklan ini akan dimasukkan ke rekening yang digunakan untuk beriklan ke platform (Facebook/Google) dan sudah termasuk PPN 11% yang dikenakan untuk iklan digital. Anggaran iklan dapat disesuaikan naik atau turun kapan saja tergantung hasil evaluasi mingguan.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(4)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Bagaimana cara saya tahu bisnis saya cocok dengan Meta Ads (FB & IG)?</span>
+                        <span id="faq-icon-4" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-4" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Hampir semua jenis produk retail, travel, pariwisata, jasa lokal, klinik, kuliner hingga edukasi sangat diminati audiens di FB & IG. Melalui sesi diskusi awal, saya akan menganalisis profil audiens untuk merekomendasikan apakah produk Anda lebih tepat didatangkan dari Meta Ads atau pencarian Google.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(5)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Saya benar-benar awam tentang cara beriklan, apakah tetap bisa dibantu?</span>
+                        <span id="faq-icon-5" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-5" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Tentu saja sangat bisa. Seluruh paket pelayanan saya dirancang untuk membantu Owner Bisnis. Tugas utama Anda atau Staff Customer Service Anda cukup melayani pesan chat WhatsApp yang masuk dengan baik dan ramah. Urusan teknis kampanye iklan, riset target pasar, dan analisis data biarkan saya yang urus sepenuhnya.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+                    <button onclick="toggleFAQ(6)" class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none bg-slate-50">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Apakah tersedia sesi konsultasi dan diskusi terlebih dahulu?</span>
+                        <span id="faq-icon-6" class="text-brand-700 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-content-6" class="hidden border-t border-slate-200/60 p-5 sm:p-6 bg-white text-slate-600 text-sm leading-relaxed">
+                        Ada, dan sepenuhnya gratis. Anda dapat menekan tombol "Hubungi via WhatsApp" atau "Jadwal Konsultasi" untuk mengobrol santai dan berdiskusi mengenai kondisi bisnis Anda tanpa ada kewajiban kontrak kerja sama apa pun di awal.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: LET'S TALK / HUBUNGI -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-900 to-brand-800 rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-xl relative overflow-hidden">
+                
+                <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+                
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Contact Text Info -->
+                    <div class="space-y-6">
+                        <span class="text-xs font-bold text-brand-200 uppercase tracking-widest bg-brand-700/50 px-3.5 py-2 rounded-full border border-brand-600 font-sans">Konsultasi Tanpa Risiko</span>
+                        <h2 class="font-sans text-3xl sm:text-4xl font-bold leading-tight">
+                            Mari Diskusikan Kebutuhan Bisnis Anda
+                        </h2>
+                        <p class="text-brand-100 text-sm sm:text-base leading-relaxed">
+                            Setiap produk and kategori pasar memiliki cara promosi yang berbeda. Sebelum buru-buru menghabiskan uang untuk iklan Anda, mari kita bicarakan dulu cara paling aman yang cocok untuk Bisnis Anda saat ini.
+                        </p>
+                        
+                        <!-- Contact Detail Links -->
+                        <div class="pt-6 space-y-4 border-t border-brand-700/80">
+                            <div class="flex items-center gap-3">
+                                <span class="w-9 h-9 rounded-lg bg-brand-700 flex items-center justify-center text-sm">📸</span>
+                                <div>
+                                    <p class="text-xs text-brand-300">Instagram</p>
+                                    <a href="https://instagram.com/bagusfebr" target="_blank" class="font-semibold text-white hover:underline text-sm sm:text-base">@bagusfebr</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-9 h-9 rounded-lg bg-brand-700 flex items-center justify-center text-sm">💬</span>
+                                <div>
+                                    <p class="text-xs text-brand-300">WhatsApp Langsung</p>
+                                    <a href="https://wa.me/6281359815703?text=Halo%20Mas%20Bagus%2C%20saya%20tertarik%20konsultasi%20mengenai%20bisnis%20saya." target="_blank" class="font-semibold text-white hover:underline text-sm sm:text-base">0813-5981-5703</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact CTAs Options Box -->
+                    <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-md">
+                        <h3 class="font-sans text-xl font-bold text-slate-900 mb-2 text-center sm:text-left">Pilih Cara Diskusi:</h3>
+                        <p class="text-slate-500 text-xs mb-6 text-center sm:text-left">Diskusi ini gratis dan tidak bersifat memaksa. Silakan tanyakan hal-hal yang membuat Anda ragu selama ini.</p>
+                        
+                        <div class="space-y-4">
+                            <!-- WhatsApp Primary Option -->
+                            <a href="https://wa.me/6281359815703?text=Halo%20Mas%20Bagus%2C%20saya%20tertarik%20konsultasi%20mengenai%20bisnis%20saya." 
+                               target="_blank" 
+                               class="flex items-center justify-center gap-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-5 rounded-xl transition-colors shadow-sm text-sm sm:text-base">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.455L0 24zm6.59-4.846c1.66.986 3.292 1.503 4.933 1.503 5.404 0 9.799-4.393 9.802-9.795.002-2.618-1.01-5.078-2.852-6.92C16.63 2.1 14.172 1.086 11.56 1.086c-5.411 0-9.805 4.393-9.809 9.795-.002 1.81.474 3.579 1.38 5.148l-1.02 3.723 3.822-.989zM18.06 14.9c-.352-.177-2.083-1.03-2.402-1.145-.318-.116-.55-.173-.781.177-.231.35-.895 1.145-1.096 1.376-.201.23-.403.26-.755.083-.352-.177-1.488-.549-2.835-1.751-1.048-.936-1.756-2.091-1.961-2.446-.206-.353-.022-.544.154-.719.159-.158.352-.412.529-.617.177-.206.236-.353.353-.589.117-.235.059-.441-.03-.617-.089-.176-.781-1.884-1.07-2.58-.281-.676-.566-.583-.781-.595-.2-.01-.43-.012-.661-.012-.231 0-.608.088-.925.434-.318.347-1.214 1.189-1.214 2.9 0 1.712 1.244 3.366 1.418 3.6.174.234 2.451 3.744 5.939 5.252.829.358 1.477.572 1.983.733.833.265 1.59.227 2.189.138.667-.1 2.083-.851 2.378-1.674.295-.823.295-1.529.208-1.675-.088-.146-.319-.234-.672-.411z"/>
+                                </svg>
+                                Hubungi via WhatsApp
+                            </a>
+
+                            <!-- Alternative Scheduler Button -->
+                            <button onclick="toggleModal()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-4 px-5 rounded-xl transition-colors text-center block text-sm sm:text-base">
+                                Jadwalkan Konsultasi Online Meeting
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-8 pb-8 border-b border-slate-800">
+                
+                <!-- Footer Left Brand description -->
+                <div class="lg:col-span-6 space-y-4">
+                    <img src="https://i.ibb.co/wZMrJjWt/Untitled-design-1.webp" alt="@bagusfebr Logo" class="h-12 w-auto object-contain mb-2">
+                    <p class="text-sm text-slate-400 max-w-sm">
+                        Membantu para pemilik bisnis konvensional maupun modern mendatangkan antrean pembeli melalui sistem promosi digital yang ramah, transparan, dan terukur.
+                    </p>
+                </div>
+
+                <!-- Footer Middle Services Menu -->
+                <div class="lg:col-span-3 space-y-3">
+                    <p class="text-white font-bold text-sm tracking-wider uppercase font-sans">Layanan Pendukung</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• Meta Ads (Facebook & Instagram)</li>
+                        <li>• Google Advertising</li>
+                        <li>• Landing Page Penjualan</li>
+                        <li>• Website Bisnis / Perusahaan</li>
+                        <li>• Sistem Pelacakan Hasil Iklan</li>
+                    </ul>
+                </div>
+
+                <!-- Footer Right Navigation Links -->
+                <div class="lg:col-span-3 space-y-3">
+                    <p class="text-white font-bold text-sm tracking-wider uppercase font-sans">Pintasan Halaman</p>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">Tentang Saya</a></li>
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Cara Kerja</a></li>
+                        <li><a href="#packages" class="hover:text-white transition-colors">Solusi & Layanan</a></li>
+                        <li><a href="#exclusions" class="hover:text-white transition-colors">Batasan Jasa</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">Tanya Jawab</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright and Legals area -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 @bagusfebr. Seluruh Hak Cipta Dilindungi.</p>
+                <div class="flex space-x-4">
+                    <span>Praktisi Pemasaran Digital Marketing Perseorangan</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE CONSULTATION MODAL -->
+    <div id="booking-modal" class="hidden fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <!-- Background overlay -->
+            <div class="fixed inset-0 bg-slate-900 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="toggleModal()"></div>
+
+            <!-- Center modal content -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <!-- Modal Header -->
+                <div class="bg-brand-900 px-6 py-5 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-bold font-serif">Jadwalkan Konsultasi Gratis</h3>
+                        <p class="text-xs text-brand-200">@bagusfebr | Digital Growth Partner</p>
+                    </div>
+                    <button onclick="toggleModal()" class="text-brand-200 hover:text-white focus:outline-none text-2xl font-bold" aria-label="Tutup">&times;</button>
+                </div>
+
+                <!-- Form / Success State -->
+                <div class="p-6">
+                    <div id="booking-form-state">
+                        <p class="text-slate-600 text-xs sm:text-sm mb-4">
+                            Isi beberapa pertanyaan singkat di bawah ini agar saya dapat mempelajari kondisi bisnis Anda sebelum kita berkomunikasi lewat telepon atau video call.
+                        </p>
+                        
+                        <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <!-- Selected Package (Hidden/Pre-filled) -->
+                            <input type="hidden" id="selected-package" name="selected_package" value="Umum/Kustom">
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1" for="client-name">Nama Lengkap Anda *</label>
+                                <input required type="text" id="client-name" name="name" placeholder="Contoh: Budi Santoso" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none bg-white">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1" for="client-phone">Nomor WhatsApp Aktif *</label>
+                                <input required type="tel" id="client-phone" name="phone" placeholder="Contoh: 081234567890" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none bg-white">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1" for="business-name">Nama Bisnis / Toko *</label>
+                                <input required type="text" id="business-name" name="business" placeholder="Contoh: Travel Umroh Barokah / Villa Melati Bali" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none bg-white">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1" for="business-niche">Kategori Bidang Bisnis *</label>
+                                <select required id="business-niche" name="niche" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none bg-white">
+                                    <option value="" disabled selected>Pilih kategori usaha...</option>
+                                    <option value="UMKM / Produk Retail">UMKM / Produk Retail</option>
+                                    <option value="Travel Umroh">Travel Umroh</option>
+                                    <option value="Villa & Hotel">Villa & Hotel</option>
+                                    <option value="Jasa Profesional">Jasa Profesional</option>
+                                    <option value="Klinik Kesehatan">Klinik Kesehatan</option>
+                                    <option value="Kontraktor & Bangunan">Kontraktor & Bangunan</option>
+                                    <option value="Jasa Lokal">Jasa Lokal</option>
+                                    <option value="FnB / Kuliner">FnB / Kuliner</option>
+                                    <option value="Lainnya">Kategori Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1" for="client-problem">Kendala utama promosi bisnis Anda saat ini *</label>
+                                <textarea required id="client-problem" name="problem" rows="3" placeholder="Contoh: Ingin mencoba beriklan tapi bingung, selama ini order sepi..." class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none bg-white"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3 px-4 rounded-xl text-sm transition-colors shadow-sm">
+                                Kirim Pengajuan & Hubungi Bagus
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- SUCCESS STATE VIEW -->
+                    <div id="booking-success-state" class="hidden text-center py-8 space-y-4">
+                        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <h4 class="font-sans text-2xl font-bold text-slate-900">Formulir Terkirim!</h4>
+                        <p class="text-slate-600 text-sm max-w-sm mx-auto">
+                            Terima kasih, data dasar bisnis Anda sudah berhasil saya catat dengan aman. 
+                        </p>
+                        <p class="text-slate-500 text-xs">
+                            Untuk mempercepat penentuan jadwal diskusi virtual kita, silakan kirimkan konfirmasi otomatis langsung ke nomor WhatsApp pribadi saya.
+                        </p>
+                        <div class="pt-4">
+                            <a id="success-wa-link" href="#" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl text-sm transition-colors shadow-md w-full">
+                                Kirim Konfirmasi Chat Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL FOR PORTFOLIO POP-OUT -->
+    <div id="lightbox-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 p-4 transition-opacity duration-200" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-4xl font-bold hover:text-slate-300 focus:outline-none z-55" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="Portofolio Pop-out" class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl transition-transform duration-200 scale-95" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Toggle Mobile Navigation Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIconOpen.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu on clicking any navigation anchor
+        const mobileAnchors = mobileMenu.querySelectorAll('a');
+        mobileAnchors.forEach(anchor => {
+            anchor.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        // Interactive Accordion for FAQs
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Modal Open/Close Logic
+        function toggleModal(packageName = 'Umum/Kustom') {
+            const modal = document.getElementById('booking-modal');
+            const packageInput = document.getElementById('selected-package');
+            
+            if (modal.classList.contains('hidden')) {
+                // Open and Reset
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // prevent background scrolling
+                if (packageInput) {
+                    packageInput.value = packageName;
+                }
+                document.getElementById('booking-form-state').classList.remove('hidden');
+                document.getElementById('booking-success-state').classList.add('hidden');
+                document.getElementById('consultation-form').reset();
+            } else {
+                // Close
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Lightbox Open & Close Functions
+        function openLightbox(imgUrl) {
+            const lightbox = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imgUrl;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+            
+            // Trigger animation scale-up
+            setTimeout(() => {
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 50);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                if (document.getElementById('booking-modal').classList.contains('hidden')) {
+                    document.body.style.overflow = ''; // restore scrolling because booking-modal is closed
+                } else {
+                    document.body.style.overflow = 'hidden'; // keep scroll locked because booking-modal is still open
+                }
+            }, 150);
+        }
+
+        // Form Submission to Custom Simulated Success & WhatsApp Redirection
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('client-name').value;
+            const phone = document.getElementById('client-phone').value;
+            const businessName = document.getElementById('business-name').value;
+            const niche = document.getElementById('business-niche').value;
+            const problem = document.getElementById('client-problem').value;
+            const selectedPackage = document.getElementById('selected-package').value;
+
+            // Crafting an elegant WhatsApp template message
+            const waMessage = `Halo Mas Bagus Febriansyah (@bagusfebr), saya baru saja mengisi formulir pengajuan di website. Berikut detail singkat bisnis saya:
+
+• *Nama:* ${name}
+• *Nomor WA:* ${phone}
+• *Nama Bisnis:* ${businessName}
+• *Kategori Usaha:* ${niche}
+• *Layanan Pilihan:* ${selectedPackage}
+• *Kendala Utama:* ${problem}
+
+Saya ingin mendiskusikan jadwal konsultasi terbaik kami untuk promosi digital ini. Terima kasih.`;
+
+            const encodedMessage = encodeURIComponent(waMessage);
+            const finalWaUrl = `https://wa.me/6281359815703?text=${encodedMessage}`;
+
+            // Set the Link into Success Button
+            document.getElementById('success-wa-link').href = finalWaUrl;
+
+            // Transition from form state to success state inside the Modal
+            document.getElementById('booking-form-state').className = 'hidden';
+            document.getElementById('booking-success-state').className = 'text-center py-8 space-y-4';
+        }
+    </script>
+</body>
+</html>
